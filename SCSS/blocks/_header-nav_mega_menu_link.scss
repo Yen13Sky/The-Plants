@@ -1,0 +1,33 @@
+.header-nav_mega_menu_link{
+  padding: 0 40px 0 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  color: #d9d9d9;
+  &:hover {
+    color: #0d750d;
+    text-decoration: none;
+
+    .icon_svg { /*Для изменения цвета иконки, необходимо удалить fill из кода иконки svg*/
+      fill: #0d750d;
+
+    }
+  }
+}
+
+.header-nav_mega_menu_link_icon{
+  margin-right: 20px;
+  .icon_svg{
+    fill: #4d4d4d;
+  }
+
+}
+
+.header-nav_mega_menu_link_text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+
+
+}

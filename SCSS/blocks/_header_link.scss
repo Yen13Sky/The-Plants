@@ -1,0 +1,51 @@
+.header_links{
+  display: flex;
+  justify-content: space-between;
+}
+.header_link{
+  display: flex; /*выстраивание элементов в один ряд*/
+  align-items: center; /*выравнивание элемента по центру вертикально*/
+  cursor: pointer;
+  text-decoration: none ;
+  color: #808080;
+  &:not(last-child){
+    margin-right: 35px;
+  }
+  .icon_svg{
+    fill: #4d4d4d;
+  }
+
+  &:hover{
+    color: #0d750d;
+    text-decoration: none;
+
+    .icon_svg{      /*Для изменения цвета иконки, необходимо удалить fill из кода иконки svg*/
+      fill: #0d750d;
+
+    }
+  }
+}
+
+.header_link_icon{
+  position: relative;
+  width: 21px;
+  height: 21px;
+  margin-right: 18px;
+}
+.header_link_notify .header_link_icon::after{
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -7px;
+  width: 6px;
+  height: 6px;
+  background-color: #0d750d;
+}
+
+.header_link_text{
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+}
+

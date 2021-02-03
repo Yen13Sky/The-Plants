@@ -1,0 +1,22 @@
+.footer_socials_icon{
+  display: flex;
+  align-items: center;
+}
+
+.footer_social_icon_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  fill: #666666;
+  text-decoration: none;
+  & + &{
+    margin-left: 34px;
+  }
+
+  &:hover{
+    text-decoration: none;
+    fill: $white;
+  }
+
+}

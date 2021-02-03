@@ -1,0 +1,119 @@
+.cards_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    margin-bottom: 30px;
+  }
+  & > *:not(:nth-child(3n)){
+    margin-right: 30px;
+  }
+}
+
+.card{
+  @extend %mixin_card;
+  padding: 21px 20px 30px;
+  width: 255px;
+}
+
+.card_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.card_head_sale{
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #303030;
+  color: #808080;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.card_header_icon{
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: #4d4d4d;
+  cursor: pointer;
+
+  &:hover{
+    .icon_svg{
+      fill: $green;
+    }
+  }
+
+  & + &{
+    margin-left: 25px;
+    margin-top: 2px;
+  }
+}
+.card_header_btn{
+  display: flex;
+  align-items: center;
+}
+
+.card_img{
+  height: 160px;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.card_title{
+  text-align: center;
+  margin-bottom: 21px;
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 500;
+  color: #d9d9d9
+}
+
+.card_rating{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+  & > * + *{
+    margin-left: 4px;
+  }
+
+}
+
+.card_rating_value{
+  margin-left: 16px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  color: #808080;
+}
+
+.card_footer{
+  display: flex;
+  justify-content: center;
+}
+
+.card_price{
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: 0.16px;
+  color: #d9d9d9;
+}
+
+.card_cart{
+  margin-left: 17px;
+  fill: #4d4d4d;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    .icon_svg{
+      fill: $green;
+    }
+  }
+}

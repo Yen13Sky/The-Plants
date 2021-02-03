@@ -1,0 +1,44 @@
+.header_nav_categories_navigation{
+  padding: 0 40px 0 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  color: #d9d9d9;
+
+  &:hover{
+    color: $green;
+    text-decoration: none;
+
+    .icon_svg{
+      fill: #4d4d4d;
+    }
+
+    &:hover {
+      color: $green;
+      text-decoration: none;
+
+      .icon_svg { /*Для изменения цвета иконки, необходимо удалить fill из кода иконки svg*/
+        fill: $green;
+
+      }
+    }
+
+  }
+
+}
+
+.header_nav_categories_navigation_icon{
+  margin-right: 22px;
+
+
+
+}
+
+.header_nav_categories_navigation_text{
+  display: flex;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+
+}
